@@ -58,9 +58,14 @@ class _JsonViewPageState extends State<JsonViewPage> {
                                           width:
                                               MediaQuery.sizeOf(context).width *
                                                   .07,
-                                          // decoration: BoxDecoration(
-                                          //     image: DecorationImage(
-                                          //         image: NetworkImage(snapshot.data!.hits![index].recipe!.image!.length.toString()))),
+                                          decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: NetworkImage(snapshot
+                                                      .data!
+                                                      .hits![index]
+                                                      .recipe!
+                                                      .image![index]
+                                                      .toString()))),
                                           child: Text(snapshot.data!
                                               .hits![index].recipe!.mealType
                                               .toString()),
